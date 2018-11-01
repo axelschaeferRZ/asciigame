@@ -1,2 +1,2 @@
 # asciigame
-ascii game with c++
+ascii c++ game  
