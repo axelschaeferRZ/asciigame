@@ -1,0 +1,44 @@
+// readfile and output lines
+//
+
+#include "stdafx.h"
+#include <stdio.h>
+#include <conio.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+
+
+int main()
+{
+
+
+	
+		//ofstream myfile2;
+		//myfile2.open("example.txt");
+		//myfile2 << "Writing this to a file.\n";
+		//myfile2.close();
+
+		string line;
+		ifstream myfile("intro.txt");
+		if (myfile.is_open())
+		{
+			while (getline(myfile, line))
+			{
+				cout << line << '\n';
+			}
+			myfile.close();
+		}
+
+		else cout << "Unable to open file";
+
+
+	int ih = 0;
+	scanf_s("%d", &ih);
+	
+	return 0;
+}
+
+
